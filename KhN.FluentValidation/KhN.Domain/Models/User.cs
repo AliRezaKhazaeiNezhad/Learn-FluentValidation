@@ -1,9 +1,9 @@
 ﻿
 namespace KhN.Domain.Models
 {
-    public class User : Object
+    public class User
     {
-        public User() : base()
+        public User()
         {
 
         }
