@@ -1,5 +1,5 @@
 ﻿
-namespace MyApp 
+namespace KhN.Cons 
 {
     internal class Program
     {
