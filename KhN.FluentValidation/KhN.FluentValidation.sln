@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		information.txt = information.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhN.Domain", "KhN.Domain\KhN.Domain.csproj", "{F73F82D8-4570-4A37-990D-B00DFB8D3D5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{741DB44C-B12E-4D84-BF32-9AF3E8BCBD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{741DB44C-B12E-4D84-BF32-9AF3E8BCBD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{741DB44C-B12E-4D84-BF32-9AF3E8BCBD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F73F82D8-4570-4A37-990D-B00DFB8D3D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73F82D8-4570-4A37-990D-B00DFB8D3D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73F82D8-4570-4A37-990D-B00DFB8D3D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F73F82D8-4570-4A37-990D-B00DFB8D3D5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
