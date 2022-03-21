@@ -1,5 +1,7 @@
 ﻿
 using KhN.Domain.Models;
+using KhN.Domain.Validators;
+using FluentValidation.Results;
 
 namespace KhN.Cons 
 {
@@ -8,20 +10,19 @@ namespace KhN.Cons
         static void Main(string[] args)
         {
             User user = new User();
+            UserValidator validator = new UserValidator();
 
-            if (string.IsNullOrEmpty(user.FirstName))
+            ValidationResult result = validator.Validate(user);
+
+            if (!result.IsValid)
             {
-                Console.WriteLine("Please enter the FirstName");
+                foreach (var failure in result.Errors)
+                {
+                    Console.WriteLine("Property " + failure.PropertyName + 
+                                      " failed validation. Error was: " + failure.ErrorMessage
+                                      );
+                }
             }
-
-
-            if (string.IsNullOrEmpty(user.LastName))
-            {
-                Console.WriteLine("Please enter the LastName");
-            }
-
-
-            Console.WriteLine("Please [Enter] To Exit ...");
         }
     }
 }
