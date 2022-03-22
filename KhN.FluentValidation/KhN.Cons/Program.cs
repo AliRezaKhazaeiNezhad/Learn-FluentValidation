@@ -15,9 +15,9 @@ namespace KhN.Cons
             User user = new User();
             UserAgeValidator validator = new UserAgeValidator();
 
-            user.Age = 17;
+            //user.Age = 17;
 
-            //user.Age = 20;
+            user.Age = 20;
 
             ValidationResult result = validator.Validate(user);
 

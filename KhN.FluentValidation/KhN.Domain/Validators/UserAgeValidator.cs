@@ -14,7 +14,6 @@ namespace KhN.Domain.Validators
 
         private bool IsOver18(int age)
         {
-
             if (age > 18)
             {
                 return true;
