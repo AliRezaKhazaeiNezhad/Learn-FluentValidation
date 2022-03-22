@@ -19,6 +19,12 @@ namespace KhN.Domain.Validators
 
 
             //RuleFor(current => current.Title)
+            //   .Cascade(CascadeMode.StopOnFirstFailure)
+            //   .NotEqual("test")
+            //   .Length(0, 3);
+
+
+            //RuleFor(current => current.Title)
             //   .Cascade(CascadeMode.Continue)
             //   .NotEqual("test")
             //   .Length(0, 3);
