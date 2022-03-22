@@ -64,12 +64,8 @@ namespace KhN.Domain.Validators
 
 
             RuleFor(current => current.FirstName)
-                .NotNull()
                 .NotEmpty()
-                .NotEqual("123456")
-                .WithErrorCode("100")
-                .WithMessage("Please Enter The FirstName")
-                .WithSeverity(Severity.Error);
+                .WithSeverity(Severity.Info);
         }
     }
 }
