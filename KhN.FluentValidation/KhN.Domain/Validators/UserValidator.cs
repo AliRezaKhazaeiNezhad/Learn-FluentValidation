@@ -17,6 +17,10 @@ namespace KhN.Domain.Validators
             RuleFor(current => current.LastName)
                 .NotNull()
                 .WithMessage("Please Enter The LastName");
+
+            RuleFor(current => current.Addresses)
+               .NotNull()
+               .WithMessage("Please Enter The Addresses");
         }
     }
 }

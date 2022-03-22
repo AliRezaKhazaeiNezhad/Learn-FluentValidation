@@ -10,16 +10,12 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session5
+            #region Session6
 
-            Customer customer = new Customer() { 
-                Address =  new Address() { 
-                    County = "Iran"
-                }
-            };
-            CustomerValidator validator = new CustomerValidator();
+            User user = new User();
+            UserValidator validator = new UserValidator();
 
-            ValidationResult result = validator.Validate(customer);
+            ValidationResult result = validator.Validate(user);
 
             if (!result.IsValid)
             {
@@ -31,6 +27,31 @@ namespace KhN.Cons
                                       );
                 }
             }
+
+
+            #endregion
+
+            #region Session5
+
+            //Customer customer = new Customer() { 
+            //    Address =  new Address() { 
+            //        County = "Iran"
+            //    }
+            //};
+            //CustomerValidator validator = new CustomerValidator();
+
+            //ValidationResult result = validator.Validate(customer);
+
+            //if (!result.IsValid)
+            //{
+            //    foreach (var failure in result.Errors)
+            //    {
+            //        Console.WriteLine("Property " + failure.PropertyName +
+            //                          " Error: " + failure.ErrorMessage +
+            //                          " Error Code: " + failure.ErrorCode
+            //                          );
+            //    }
+            //}
 
             #endregion
 
