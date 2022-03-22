@@ -10,28 +10,32 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
+            #region Session10
+
+            #endregion
+
             #region Session9
 
-            User user = new User();
-            UserAgeValidator validator = new UserAgeValidator();
+            //User user = new User();
+            //UserAgeValidator validator = new UserAgeValidator();
 
-            //user.Age = 17;
+            ////user.Age = 17;
 
-            user.Age = 20;
+            //user.Age = 20;
 
-            ValidationResult result = validator.Validate(user);
+            //ValidationResult result = validator.Validate(user);
 
 
-            if (!result.IsValid)
-            {
-                foreach (var failure in result.Errors)
-                {
-                    Console.WriteLine("Property " + failure.PropertyName +
-                                      " Error: " + failure.ErrorMessage +
-                                      " Error Code: " + failure.ErrorCode
-                                      );
-                }
-            }
+            //if (!result.IsValid)
+            //{
+            //    foreach (var failure in result.Errors)
+            //    {
+            //        Console.WriteLine("Property " + failure.PropertyName +
+            //                          " Error: " + failure.ErrorMessage +
+            //                          " Error Code: " + failure.ErrorCode
+            //                          );
+            //    }
+            //}
 
             #endregion
 
