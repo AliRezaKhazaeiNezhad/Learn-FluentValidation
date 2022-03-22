@@ -7,9 +7,9 @@ namespace KhN.Domain.Validators
     {
         public ProductValidator()
         {
-            RuleFor(current => current.Title)
-                .NotEqual("test")
-                .Length(0, 3);
+            //RuleFor(current => current.Title)
+            //    .NotEqual("test")
+            //    .Length(0, 3);
 
 
             //RuleFor(current => current.Title)
@@ -24,10 +24,10 @@ namespace KhN.Domain.Validators
             //   .Length(0, 3);
 
 
-            //RuleFor(current => current.Title)
-            //   .Cascade(CascadeMode.Continue)
-            //   .NotEqual("test")
-            //   .Length(0, 3);
+            RuleFor(current => current.Title)
+               .Cascade(CascadeMode.Continue)
+               .NotEqual("test")
+               .Length(0, 3);
         }
     }
 }
