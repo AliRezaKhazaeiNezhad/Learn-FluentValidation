@@ -10,7 +10,7 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session15
+            #region Session16
 
             User user = new User();
             UserValidator validator = new UserValidator();
@@ -22,10 +22,29 @@ namespace KhN.Cons
                 foreach (var failure in result.Errors)
                 {
                     Console.WriteLine("Property " + failure.PropertyName +
-                                      " Error Code: " + failure.ErrorCode
+                                      " State: " + failure.CustomState
                                       );
                 }
             }
+
+            #endregion
+
+            #region Session15
+
+            //User user = new User();
+            //UserValidator validator = new UserValidator();
+
+            //ValidationResult result = validator.Validate(user);
+
+            //if (!result.IsValid)
+            //{
+            //    foreach (var failure in result.Errors)
+            //    {
+            //        Console.WriteLine("Property " + failure.PropertyName +
+            //                          " Error Code: " + failure.ErrorCode
+            //                          );
+            //    }
+            //}
 
             #endregion
 

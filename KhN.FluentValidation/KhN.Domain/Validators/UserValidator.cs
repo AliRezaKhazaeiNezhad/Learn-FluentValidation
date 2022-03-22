@@ -71,6 +71,7 @@ namespace KhN.Domain.Validators
 
             RuleFor(current => current.FirstName)
                 .NotEmpty()
+                .WithState(fName => 1234)
                 .WithErrorCode("ER-1256");
 
         }
