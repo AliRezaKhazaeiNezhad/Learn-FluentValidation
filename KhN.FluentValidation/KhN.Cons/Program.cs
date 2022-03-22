@@ -9,7 +9,7 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            User user = new User();
+            User user = new User() { FirstName = "123456" };
             UserValidator validator = new UserValidator();
 
             ValidationResult result = validator.Validate(user);
@@ -19,7 +19,8 @@ namespace KhN.Cons
                 foreach (var failure in result.Errors)
                 {
                     Console.WriteLine("Property " + failure.PropertyName + 
-                                      " failed validation. Error was: " + failure.ErrorMessage
+                                      " Error: " + failure.ErrorMessage +
+                                      " Error Code: " + failure.ErrorCode
                                       );
                 }
             }
