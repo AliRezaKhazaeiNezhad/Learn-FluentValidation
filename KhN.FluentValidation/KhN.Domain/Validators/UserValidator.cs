@@ -63,9 +63,16 @@ namespace KhN.Domain.Validators
 
 
 
+            //RuleFor(current => current.FirstName)
+            //    .NotEmpty()
+            //    .WithSeverity(Severity.Info);
+
+
+
             RuleFor(current => current.FirstName)
                 .NotEmpty()
-                .WithSeverity(Severity.Info);
+                .WithErrorCode("ER-1256");
+
         }
     }
 }
