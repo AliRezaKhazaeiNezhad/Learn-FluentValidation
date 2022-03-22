@@ -10,6 +10,33 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
+            #region Session8
+
+            User user = new User();
+            UserValidator validator = new UserValidator();
+
+            ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("NameAndFamily"));
+
+            //ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("AgeAndAddress"));
+
+            //ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("NameAndFamily", "AgeAndAddress"));
+
+            //ValidationResult result = validator.Validate(user, options => options.IncludeAllRuleSets());
+
+
+            if (!result.IsValid)
+            {
+                foreach (var failure in result.Errors)
+                {
+                    Console.WriteLine("Property " + failure.PropertyName +
+                                      " Error: " + failure.ErrorMessage +
+                                      " Error Code: " + failure.ErrorCode
+                                      );
+                }
+            }
+
+            #endregion
+
             #region Session7
 
             #endregion

@@ -7,20 +7,50 @@ namespace KhN.Domain.Validators
     {
         public UserValidator()
         {
-            RuleFor(current => current.FirstName)
+            //RuleFor(current => current.FirstName)
+            //    .NotNull()
+            //    .NotEmpty()
+            //    .NotEqual("123456")
+            //    .WithErrorCode("100")
+            //    .WithMessage("Please Enter The FirstName");
+
+            //RuleFor(current => current.LastName)
+            //    .NotNull()
+            //    .WithMessage("Please Enter The LastName");
+
+            //RuleFor(current => current.Addresses)
+            //   .NotNull()
+            //   .WithMessage("Please Enter The Addresses");
+
+
+
+            RuleSet("NameAndFamily", () =>
+            {
+                RuleFor(current => current.FirstName)
                 .NotNull()
-                .NotEmpty()
                 .NotEqual("123456")
                 .WithErrorCode("100")
                 .WithMessage("Please Enter The FirstName");
 
-            RuleFor(current => current.LastName)
-                .NotNull()
-                .WithMessage("Please Enter The LastName");
+                RuleFor(current => current.LastName)
+                    .NotNull()
+                    .WithMessage("Please Enter The LastName");
+            });
 
-            RuleFor(current => current.Addresses)
-               .NotNull()
-               .WithMessage("Please Enter The Addresses");
+
+            RuleSet("AgeAndAddress", () =>
+            {
+
+                RuleFor(current => current.Age)
+                    .NotNull()
+                    .GreaterThan(1);
+
+
+                RuleFor(current => current.Addresses)
+                   .NotNull()
+                   .WithMessage("Please Enter The Addresses");
+
+            });
         }
     }
 }
