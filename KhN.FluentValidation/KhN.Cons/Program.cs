@@ -12,6 +12,25 @@ namespace KhN.Cons
         {
             #region Session11
 
+            User user = new User()
+            {
+                FirstName = "A"
+            };
+            UserFirstNameValidator validator = new UserFirstNameValidator();
+
+            ValidationResult result = validator.Validate(user);
+
+            if (!result.IsValid)
+            {
+                foreach (var failure in result.Errors)
+                {
+                    Console.WriteLine("Property " + failure.PropertyName +
+                                      " Error: " + failure.ErrorMessage +
+                                      " Error Code: " + failure.ErrorCode
+                                      );
+                }
+            }
+
             #endregion
 
             #region Session10
