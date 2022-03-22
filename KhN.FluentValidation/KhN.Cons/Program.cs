@@ -12,20 +12,20 @@ namespace KhN.Cons
         {
             #region Session14
 
-            User user = new User();
-            UserValidator validator = new UserValidator();
+            //User user = new User();
+            //UserValidator validator = new UserValidator();
 
-            ValidationResult result = validator.Validate(user);
+            //ValidationResult result = validator.Validate(user);
 
-            if (!result.IsValid)
-            {
-                foreach (var failure in result.Errors)
-                {
-                    Console.WriteLine("Property " + failure.PropertyName +
-                                      " Severity: " + failure.Severity
-                                      );
-                }
-            }
+            //if (!result.IsValid)
+            //{
+            //    foreach (var failure in result.Errors)
+            //    {
+            //        Console.WriteLine("Property " + failure.PropertyName +
+            //                          " Severity: " + failure.Severity
+            //                          );
+            //    }
+            //}
 
             #endregion
 
