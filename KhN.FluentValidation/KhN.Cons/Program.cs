@@ -10,6 +10,10 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
+            #region Session11
+
+            #endregion
+
             #region Session10
 
             #endregion

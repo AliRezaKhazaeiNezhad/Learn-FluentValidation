@@ -9,6 +9,7 @@ namespace KhN.Domain.Validators
         {
             RuleFor(current => current.FirstName)
                 .Length(10, 255)
+                .WithName("The First Name")
                 .WithMessage("Length must be 10-255");
         }
     }
