@@ -10,18 +10,16 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session8
+            #region Session9
 
             User user = new User();
-            UserValidator validator = new UserValidator();
+            UserAgeValidator validator = new UserAgeValidator();
 
-            ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("NameAndFamily"));
+            user.Age = 17;
 
-            //ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("AgeAndAddress"));
+            //user.Age = 20;
 
-            //ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("NameAndFamily", "AgeAndAddress"));
-
-            //ValidationResult result = validator.Validate(user, options => options.IncludeAllRuleSets());
+            ValidationResult result = validator.Validate(user);
 
 
             if (!result.IsValid)
@@ -34,6 +32,33 @@ namespace KhN.Cons
                                       );
                 }
             }
+
+            #endregion
+
+            #region Session8
+
+            //User user = new User();
+            //UserValidator validator = new UserValidator();
+
+            //ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("NameAndFamily"));
+
+            //ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("AgeAndAddress"));
+
+            //ValidationResult result = validator.Validate(user, options => options.IncludeRuleSets("NameAndFamily", "AgeAndAddress"));
+
+            //ValidationResult result = validator.Validate(user, options => options.IncludeAllRuleSets());
+
+
+            //if (!result.IsValid)
+            //{
+            //    foreach (var failure in result.Errors)
+            //    {
+            //        Console.WriteLine("Property " + failure.PropertyName +
+            //                          " Error: " + failure.ErrorMessage +
+            //                          " Error Code: " + failure.ErrorCode
+            //                          );
+            //    }
+            //}
 
             #endregion
 
