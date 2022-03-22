@@ -12,22 +12,22 @@ namespace KhN.Cons
         {
             #region Session13
 
-            Product product = new Product()
-            {
-                Title = "test"
-            };
-            ProductValidator validator = new ProductValidator();
-            ValidationResult result = validator.Validate(product);
+            //Product product = new Product()
+            //{
+            //    Title = "test"
+            //};
+            //ProductValidator validator = new ProductValidator();
+            //ValidationResult result = validator.Validate(product);
 
-            if (!result.IsValid)
-            {
-                foreach (var failure in result.Errors)
-                {
-                    Console.WriteLine("Property " + failure.PropertyName +
-                                      " Error: " + failure.ErrorMessage
-                                      );
-                }
-            }
+            //if (!result.IsValid)
+            //{
+            //    foreach (var failure in result.Errors)
+            //    {
+            //        Console.WriteLine("Property " + failure.PropertyName +
+            //                          " Error: " + failure.ErrorMessage
+            //                          );
+            //    }
+            //}
 
             #endregion
 
