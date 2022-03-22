@@ -10,3 +10,5 @@
 /KhN.FluentValidation/KhN.Cons/obj
 /KhN.FluentValidation/KhN.Domain/obj
 /KhN.FluentValidation/KhN.Domain/bin/Debug/net6.0
+/KhN.FluentValidation/KhN.Resource/bin/Debug/net6.0
+/KhN.FluentValidation/KhN.Resource/obj

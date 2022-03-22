@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using KhN.Domain.Models;
+using KhN.Resource;
 
 namespace KhN.Domain.Validators
 {
@@ -69,11 +70,20 @@ namespace KhN.Domain.Validators
 
 
 
-            RuleFor(current => current.FirstName)
-                .NotEmpty()
-                .WithState(fName => 1234)
-                .WithErrorCode("ER-1256");
+            //RuleFor(current => current.FirstName)
+            //    .NotEmpty()
+            //    .WithState(fName => 1234)
+            //    .WithErrorCode("ER-1256");
 
+
+
+            //RuleFor(current => current.FirstName)
+            //    .NotNull()
+            //    .WithMessage(fName => MyLocalizedMessagesUS.FirstName);
+
+            //RuleFor(current => current.FirstName)
+            //  .NotNull()
+            //  .WithMessage(fName => MyLocalizedMessagesFR.FirstName);
         }
     }
 }
