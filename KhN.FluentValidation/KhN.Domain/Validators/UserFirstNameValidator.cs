@@ -7,10 +7,15 @@ namespace KhN.Domain.Validators
     {
         public UserFirstNameValidator()
         {
+            //RuleFor(current => current.FirstName)
+            //    .Length(10, 255)
+            //    .WithName("The First Name")
+            //    .WithMessage("Length must be 10-255");
+
+
             RuleFor(current => current.FirstName)
-                .Length(10, 255)
-                .WithName("The First Name")
-                .WithMessage("Length must be 10-255");
+               .NotNull()
+               .WithName("The First Name");
         }
     }
 }
