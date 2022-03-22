@@ -58,13 +58,18 @@ namespace KhN.Domain.Validators
 
 
 
+            //Include(new UserFirstNameValidator());
+            //Include(new UserAgeValidator());
 
 
 
-
-
-            Include(new UserFirstNameValidator());
-            Include(new UserAgeValidator());
+            RuleFor(current => current.FirstName)
+                .NotNull()
+                .NotEmpty()
+                .NotEqual("123456")
+                .WithErrorCode("100")
+                .WithMessage("Please Enter The FirstName")
+                .WithSeverity(Severity.Error);
         }
     }
 }
