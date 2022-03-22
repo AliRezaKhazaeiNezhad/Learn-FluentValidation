@@ -7,7 +7,7 @@ namespace KhN.Domain.Validators
     {
         public AddressValidator()
         {
-            RuleFor(address => address.PostCode)
+            RuleFor(current => current.PostCode)
                 .NotNull()
                 .WithMessage("PostCode is null !!!");
         }

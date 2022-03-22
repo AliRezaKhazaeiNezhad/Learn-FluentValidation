@@ -8,10 +8,10 @@ namespace KhN.Domain.Validators
     {
         public CustomerValidator()
         {
-            RuleFor(customer => customer.Name)
+            RuleFor(current => current.Name)
                 .NotNull();
 
-            RuleFor(customer => customer.Address)
+            RuleFor(current => current.Address)
                 .SetValidator(new AddressValidator());
         }
     }
