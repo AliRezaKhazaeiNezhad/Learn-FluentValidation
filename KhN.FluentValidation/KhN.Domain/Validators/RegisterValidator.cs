@@ -7,7 +7,7 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session25
+            //Session24
             RuleFor(current => current.UserName).MinimumLength(5);
 
 
