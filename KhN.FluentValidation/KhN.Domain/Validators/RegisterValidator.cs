@@ -7,9 +7,13 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session26
+            //Session27
+            RuleFor(current => current.Email).Matches(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,})+)$");
+
+
+            ////Session26
             //RuleFor(current => current.Credit).GreaterThan(500000);
-            RuleFor(current => current.Credit).GreaterThanOrEqualTo(500000);
+            //RuleFor(current => current.Credit).GreaterThanOrEqualTo(500000);
 
 
             ////Session25

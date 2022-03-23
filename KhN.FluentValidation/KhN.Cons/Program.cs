@@ -10,13 +10,21 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session18,19,20,21,22,23,24,25,26
+            #region Session18,19,20,21,22,23,24,25,26,27
 
-            //Session26
+            //Session27
             Register register = new Register()
             {
-                Credit = 500000
+                Email = "legolearn.ir"
+                //Email = "info@legolearn.ir"
             };
+
+
+            ////Session26
+            //Register register = new Register()
+            //{
+            //    Credit = 500000
+            //};
 
 
             ////Session25
