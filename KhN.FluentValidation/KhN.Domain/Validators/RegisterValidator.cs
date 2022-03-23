@@ -7,8 +7,13 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session20
-            RuleFor(current => current.UserName).NotEqual("admin");
+            //Session21
+            RuleFor(current => current.Password)
+                .Equal(current => current.RePassword)
+                .WithMessage("Password and Repasword not equal");
+
+            ////Session20
+            //RuleFor(current => current.UserName).NotEqual("admin");
 
 
             //Session19
