@@ -15,8 +15,8 @@ namespace KhN.Cons
             //Session27
             Register register = new Register()
             {
-                Email = "legolearn.ir"
-                //Email = "info@legolearn.ir"
+                //Email = "legolearn.ir"
+                Email = "info@legolearn.ir"
             };
 
 
