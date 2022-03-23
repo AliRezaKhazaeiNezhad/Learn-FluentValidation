@@ -7,7 +7,12 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            RuleFor(current => current.UserName).NotNull();
+            //Session19
+            RuleFor(current => current.UserName).NotEmpty();
+
+
+            //Session18
+            //RuleFor(current => current.UserName).NotNull();
         }
     }
 }

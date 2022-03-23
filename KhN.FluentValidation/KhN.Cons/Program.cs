@@ -10,20 +10,20 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session18
+            #region Session18,19
 
-            //Register register = new Register();
-            //RegisterValidator validator = new RegisterValidator();
+            Register register = new Register();
+            RegisterValidator validator = new RegisterValidator();
 
-            //ValidationResult result = validator.Validate(register);
+            ValidationResult result = validator.Validate(register);
 
-            //if (!result.IsValid)
-            //{
-            //    foreach (var failure in result.Errors)
-            //    {
-            //        Console.WriteLine(failure.ErrorMessage);
-            //    }
-            //}
+            if (!result.IsValid)
+            {
+                foreach (var failure in result.Errors)
+                {
+                    Console.WriteLine(failure.ErrorMessage);
+                }
+            }
 
             #endregion
 
