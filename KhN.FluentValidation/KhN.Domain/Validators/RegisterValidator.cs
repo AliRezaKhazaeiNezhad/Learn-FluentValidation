@@ -7,8 +7,12 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session22
-            RuleFor(current => current.UserName).Length(11);
+            //Session23
+            RuleFor(current => current.UserName).MaximumLength(15);
+
+
+            ////Session22
+            //RuleFor(current => current.UserName).Length(11);
 
 
             ////Session21
