@@ -13,9 +13,9 @@ namespace KhN.Domain.Validators
             //    .WithMessage("Length must be 10-255");
 
 
-            RuleFor(current => current.FirstName)
-               .NotNull()
-               .WithName("The First Name");
+            //RuleFor(current => current.FirstName)
+            //   .NotNull()
+            //   .WithName("The First Name");
         }
     }
 }
