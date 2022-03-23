@@ -12,11 +12,19 @@ namespace KhN.Cons
         {
             #region Session18,19,20,21,22,23,24
 
-            //Session24
+            //Session25
             Register register = new Register()
             {
-                UserName = "aaa"
+                Credit = 10000000
             };
+
+
+
+            ////Session24
+            //Register register = new Register()
+            //{
+            //    UserName = "aaa"
+            //};
 
 
             ////Session23
