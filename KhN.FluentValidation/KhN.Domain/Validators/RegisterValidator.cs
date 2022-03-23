@@ -7,8 +7,12 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
+            //Session20
+            RuleFor(current => current.UserName).NotEqual("admin");
+
+
             //Session19
-            RuleFor(current => current.UserName).NotEmpty();
+            //RuleFor(current => current.UserName).NotEmpty();
 
 
             //Session18

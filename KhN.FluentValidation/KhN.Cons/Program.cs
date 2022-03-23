@@ -10,9 +10,16 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session18,19
+            #region Session18,19,20
 
-            Register register = new Register();
+            //Session20
+            Register register = new Register()
+            {
+                UserName = "admin"
+            };
+
+            ////Session18,19
+            //Register register = new Register();
             RegisterValidator validator = new RegisterValidator();
 
             ValidationResult result = validator.Validate(register);
