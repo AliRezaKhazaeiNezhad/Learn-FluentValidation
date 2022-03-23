@@ -7,9 +7,14 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session25
+            //Session26
+            RuleFor(current => current.Credit).GreaterThan(500000);
+            //RuleFor(current => current.Credit).GreaterThanOrEqualTo(500000);
+
+
+            ////Session25
             //RuleFor(current => current.Credit).LessThan(10000000);
-            RuleFor(current => current.Credit).LessThanOrEqualTo(10000000);
+            //RuleFor(current => current.Credit).LessThanOrEqualTo(10000000);
 
 
             ////Session24

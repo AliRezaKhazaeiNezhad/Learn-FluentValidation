@@ -10,13 +10,20 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session18,19,20,21,22,23,24
+            #region Session18,19,20,21,22,23,24,25,26
 
-            //Session25
+            //Session26
             Register register = new Register()
             {
-                Credit = 10000000
+                Credit = 500000
             };
+
+
+            ////Session25
+            //Register register = new Register()
+            //{
+            //    Credit = 10000000
+            //};
 
 
 
