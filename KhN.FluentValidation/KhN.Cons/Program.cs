@@ -10,13 +10,20 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session18,19,20,21,22,23
+            #region Session18,19,20,21,22,23,24
 
-            //Session23
+            //Session24
             Register register = new Register()
             {
-                UserName = "legolearnuserformywebsite"
+                UserName = "aaa"
             };
+
+
+            ////Session23
+            //Register register = new Register()
+            //{
+            //    UserName = "legolearnuserformywebsite"
+            //};
 
 
 
