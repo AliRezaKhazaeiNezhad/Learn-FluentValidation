@@ -13,5 +13,6 @@ namespace KhN.Domain.Models
         public string Password { get; set; }
         public string RePassword { get; set; }
         public decimal Credit { get; set; }
+        public string CreditCard { get; set; }
     }
 }

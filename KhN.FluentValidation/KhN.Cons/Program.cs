@@ -10,14 +10,23 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session18,19,20,21,22,23,24,25,26,27,28
+            #region Session18,19,20,21,22,23,24,25,26,27,28,29
 
-            //Session27,28
+            //Session29
             Register register = new Register()
             {
-                Email = "legolearn.ir"
-                //Email = "info@legolearn.ir"
+                CreditCard = "12x553",
+                //CreditCard = "6219816058671755",
+                //CreditCard = "6219-8160-5867-1755"
             };
+
+
+            ////Session27,28
+            //Register register = new Register()
+            //{
+            //    //Email = "legolearn.ir"
+            //    Email = "info@legolearn.ir"
+            //};
 
 
             ////Session26

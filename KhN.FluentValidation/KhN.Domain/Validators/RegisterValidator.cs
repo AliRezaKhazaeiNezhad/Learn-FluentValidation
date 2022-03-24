@@ -7,8 +7,12 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session28
-            RuleFor(current => current.Email).EmailAddress();
+            //Session29
+            RuleFor(current => current.CreditCard).CreditCard();
+
+
+            ////Session28
+            //RuleFor(current => current.Email).EmailAddress();
 
 
             ////Session27
