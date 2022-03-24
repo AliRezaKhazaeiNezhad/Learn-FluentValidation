@@ -14,5 +14,6 @@ namespace KhN.Domain.Models
         public string RePassword { get; set; }
         public decimal Credit { get; set; }
         public string CreditCard { get; set; }
+        public int Age { get; set; }
     }
 }

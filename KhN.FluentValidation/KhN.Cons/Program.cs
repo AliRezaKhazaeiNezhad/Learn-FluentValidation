@@ -10,15 +10,23 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session18,19,20,21,22,23,24,25,26,27,28,29
+            #region Session18,19,20,21,22,23,24,25,26,27,28,29,30
 
-            //Session29
+            //Session30
             Register register = new Register()
             {
-                CreditCard = "12x553",
-                //CreditCard = "6219816058671755",
-                //CreditCard = "6219-8160-5867-1755"
+                Age = 18
+                //Age = 26
             };
+
+
+            ////Session29
+            //Register register = new Register()
+            //{
+            //    //CreditCard = "12x553",
+            //    //CreditCard = "6219861056871766",
+            //    CreditCard = "6219-8610-5687-1766"
+            //};
 
 
             ////Session27,28

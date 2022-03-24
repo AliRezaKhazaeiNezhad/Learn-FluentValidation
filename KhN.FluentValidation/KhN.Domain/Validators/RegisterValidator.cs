@@ -7,8 +7,12 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session29
-            RuleFor(current => current.CreditCard).CreditCard();
+            //Session30
+            RuleFor(current => current.Age).ExclusiveBetween(25,40);
+
+
+            ////Session29
+            //RuleFor(current => current.CreditCard).CreditCard();
 
 
             ////Session28
