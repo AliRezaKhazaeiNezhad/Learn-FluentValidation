@@ -12,12 +12,20 @@ namespace KhN.Cons
         {
             #region Session18,19,20,21,22,23,24,25,26,27,28,29,30
 
-            //Session30
+            //Session31
             Register register = new Register()
             {
-                Age = 18
-                //Age = 26
+                Credit = Convert.ToDecimal("12345.67")
+                //Credit = Convert.ToDecimal("1234.56")
             };
+
+
+            ////Session30
+            //Register register = new Register()
+            //{
+            //    //Age = 18
+            //    Age = 26
+            //};
 
 
             ////Session29

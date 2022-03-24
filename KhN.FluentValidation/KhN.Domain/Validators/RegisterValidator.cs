@@ -7,8 +7,12 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session30
-            RuleFor(current => current.Age).ExclusiveBetween(25,40);
+            //Session31
+            RuleFor(current => current.Credit).ScalePrecision(2, 6);
+
+
+            ////Session30
+            //RuleFor(current => current.Age).ExclusiveBetween(25,40);
 
 
             ////Session29
