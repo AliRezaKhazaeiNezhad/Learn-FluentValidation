@@ -13,4 +13,4 @@ Nuget:
 
 Nyget:
 	https://www.nuget.org/packages/NUnit/
-	Version : 3.12.0
+	Version : 3.13.3
