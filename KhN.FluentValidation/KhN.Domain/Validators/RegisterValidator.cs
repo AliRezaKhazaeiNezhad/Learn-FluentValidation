@@ -7,19 +7,19 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session32
-            RuleFor(current => current.UserName).Custom((userName, context) =>
-            {
-                if (userName.Any(current => Char.IsWhiteSpace(current)))
-                {
-                    context.AddFailure(context.PropertyName + " has white space");
-                }
+            ////Session32
+            //RuleFor(current => current.UserName).Custom((userName, context) =>
+            //{
+            //    if (userName.Any(current => Char.IsWhiteSpace(current)))
+            //    {
+            //        context.AddFailure(context.PropertyName + " has white space");
+            //    }
 
-                if (string.IsNullOrEmpty(userName))
-                {
-                    context.AddFailure(context.PropertyName + " is null or empty");
-                }
-            });
+            //    if (string.IsNullOrEmpty(userName))
+            //    {
+            //        context.AddFailure(context.PropertyName + " is null or empty");
+            //    }
+            //});
 
 
             ////Session31

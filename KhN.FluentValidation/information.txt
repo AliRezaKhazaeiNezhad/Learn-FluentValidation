@@ -8,3 +8,9 @@ Github:
 Nuget:
 	https://www.nuget.org/packages/FluentValidation/
 	Version : 10.4.0
+
+--------------------NUnit
+
+Nyget:
+	https://www.nuget.org/packages/NUnit/
+	Version : 3.12.0

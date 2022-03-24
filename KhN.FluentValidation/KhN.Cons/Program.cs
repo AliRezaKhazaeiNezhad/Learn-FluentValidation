@@ -4,23 +4,40 @@ using KhN.Domain.Models;
 using KhN.Domain.Validators;
 using FluentValidation.Results;
 
-namespace KhN.Cons 
+namespace KhN.Cons
 {
     public class Program
     {
         static void Main(string[] args)
         {
+            #region Session33
+
+            //Person person = new Person();
+            //PersonValidator validator = new PersonValidator();
+
+            //ValidationResult result = validator.Validate(person);
+
+            //if (!result.IsValid)
+            //{
+            //    foreach (var failure in result.Errors)
+            //    {
+            //        Console.WriteLine(failure.ErrorMessage);
+            //    }
+            //}
+
+            #endregion
+
             #region Session18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
 
 
-            //Session32
-            Register register = new Register()
-            {
-                //UserName = "     "
-                //UserName = "Ali Reza"
-                //UserName = ""
-                UserName = "legolearn"
-            };
+            ////Session32
+            //Register register = new Register()
+            //{
+            //    //UserName = "     "
+            //    //UserName = "Ali Reza"
+            //    //UserName = ""
+            //    UserName = "legolearn"
+            //};
 
 
             ////Session31
@@ -109,17 +126,23 @@ namespace KhN.Cons
 
             ////Session18,19
             //Register register = new Register();
-            RegisterValidator validator = new RegisterValidator();
 
-            ValidationResult result = validator.Validate(register);
 
-            if (!result.IsValid)
-            {
-                foreach (var failure in result.Errors)
-                {
-                    Console.WriteLine(failure.ErrorMessage);
-                }
-            }
+
+
+
+
+            //RegisterValidator validator = new RegisterValidator();
+
+            //ValidationResult result = validator.Validate(register);
+
+            //if (!result.IsValid)
+            //{
+            //    foreach (var failure in result.Errors)
+            //    {
+            //        Console.WriteLine(failure.ErrorMessage);
+            //    }
+            //}
 
             #endregion
 
