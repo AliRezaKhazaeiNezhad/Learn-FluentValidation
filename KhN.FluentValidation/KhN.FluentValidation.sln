@@ -16,7 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KhN.Domain", "KhN.Domain\Kh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KhN.Resource", "KhN.Resource\KhN.Resource.csproj", "{60E821E4-362F-4C56-873F-F0A4A8A2C360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhN.TestProject", "KhN.TestProject\KhN.TestProject.csproj", "{ACC3D5C4-3F6A-49EB-BA1C-F4CF5BF42F65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KhN.TestProject", "KhN.TestProject\KhN.TestProject.csproj", "{ACC3D5C4-3F6A-49EB-BA1C-F4CF5BF42F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhN.Web", "KhN.Web\KhN.Web.csproj", "{8E80B2BC-9693-47EB-90D6-520E6C1AD7E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{ACC3D5C4-3F6A-49EB-BA1C-F4CF5BF42F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACC3D5C4-3F6A-49EB-BA1C-F4CF5BF42F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACC3D5C4-3F6A-49EB-BA1C-F4CF5BF42F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E80B2BC-9693-47EB-90D6-520E6C1AD7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E80B2BC-9693-47EB-90D6-520E6C1AD7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E80B2BC-9693-47EB-90D6-520E6C1AD7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E80B2BC-9693-47EB-90D6-520E6C1AD7E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

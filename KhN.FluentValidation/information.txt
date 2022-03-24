@@ -17,7 +17,7 @@ Nyget:
 
 
 
--------------------.NetCore API
+-------------------.NetCore API/MVC
 
 Nuget:
 	https://www.nuget.org/packages/FluentValidation.AspNetCore/
