@@ -10,14 +10,25 @@ namespace KhN.Cons
     {
         static void Main(string[] args)
         {
-            #region Session18,19,20,21,22,23,24,25,26,27,28,29,30
+            #region Session18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
 
-            //Session31
+
+            //Session32
             Register register = new Register()
             {
-                Credit = Convert.ToDecimal("12345.67")
-                //Credit = Convert.ToDecimal("1234.56")
+                //UserName = "     "
+                //UserName = "Ali Reza"
+                //UserName = ""
+                //UserName = "AliReza"
             };
+
+
+            ////Session31
+            //Register register = new Register()
+            //{
+            //    //Credit = Convert.ToDecimal("12345.67")
+            //    Credit = Convert.ToDecimal("1234.56")
+            //};
 
 
             ////Session30

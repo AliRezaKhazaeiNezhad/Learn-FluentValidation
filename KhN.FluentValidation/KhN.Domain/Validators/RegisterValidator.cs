@@ -7,8 +7,23 @@ namespace KhN.Domain.Validators
     {
         public RegisterValidator()
         {
-            //Session31
-            RuleFor(current => current.Credit).ScalePrecision(2, 6);
+            //Session32
+            RuleFor(current => current.UserName).Custom((userName, context) =>
+            {
+                if (userName.Any(current => Char.IsWhiteSpace(current)))
+                {
+                    context.AddFailure(context.PropertyName + " has white space");
+                }
+
+                if (string.IsNullOrEmpty(userName))
+                {
+                    context.AddFailure(context.PropertyName + " is null or empty");
+                }
+            });
+
+
+            ////Session31
+            //RuleFor(current => current.Credit).ScalePrecision(2, 6);
 
 
             ////Session30
